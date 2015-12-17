@@ -1,0 +1,9 @@
+
+table#customer th{
+  background-color: red;
+}
+
+
+table#customer tr:nth-child(odd){
+  background-color: pink;
+}

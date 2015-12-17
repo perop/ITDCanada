@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    Country:
+    <select id="country" onchange="countryChange()">
+        <option>--Country--</option>
+        <option value="ir">Iran</option>
+        <option value="br">Brazil</option>
+        <option value="jp">Japan</option>
+        <option value="sp">Spain</option>
+        <option value="it">Italy</option>
+    </select>
+
+    <select id="province" onchange="provinceChange()">
+      <option>--Province--</option>
+    </select>
+
+    <select id="city">
+      <option>--City--</option>
+    </select>
+
+    <input type="text" name="name" value="" id='email'>
+    <button type="button" name="button" onclick="validateEmail()">Send</button>
+
+    <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>

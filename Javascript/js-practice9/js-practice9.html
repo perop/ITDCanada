@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title></title>
+  </head>
+
+  <body>
+    <div id="box">
+      <button onclick="preimg()"><</button>
+      <div id="photobox">
+        <img id="image" src="image1.jpg"/>
+      </div>
+      <button onclick="nextimg()">></button>
+    </div>
+
+    <script>
+    var count=1;
+
+    function nextimg()
+    {
+      if(count == 3){
+        count = 1;
+      } else {
+        count++;
+      }
+
+      switchImages();
+    }
+
+    function preimg()
+    {
+      if(count == 1){
+        count = 3;
+      } else {
+        count--;
+      }
+
+      switchImages();
+    }
+
+    function switchImages() {
+        switch (count) {
+          case 1:
+          // document.getElementById('image').style.backgroundImage='url("image2.jpg")';
+          document.getElementById('image').src = "image1.jpg";
+          break;
+          case 2:
+          document.getElementById('image').src = "image2.jpg";
+          break;
+          case 3:
+          document.getElementById('image').src = "image3.jpg";
+          break;
+      }
+    }
+    </script>
+
+  </body>
+
+</html>

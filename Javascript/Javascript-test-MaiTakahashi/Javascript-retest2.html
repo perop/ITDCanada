@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+<style>
+
+div{
+  width: 200px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+p{
+  font-size: 20px;
+  text-align: center;
+}
+
+
+</style>
+
+  <body>
+  <div>
+    <p>Enter your Name<p>
+    <form name="f1" method="post" action="" onsubmit="return checkForm1()" style="margin:0px">
+    <input type="text" name="tel">
+    <input type="submit" value="Submit">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+  <a href="Javascript-retest.html"><img id="image" src="back_off.gif" /></a>
+</div>
+<script>
+
+function checkForm1(){
+if(document.f1.tel.value == ""){
+alert('Please make sure you entered your name!');
+document.f1.tel.focus();
+return false;
+}
+return true;
+}
+
+
+function smartRollover() {
+	if(document.getElementsByTagName) {
+		var images = document.getElementsByTagName("img");
+
+		for(var i=0; i < images.length; i++) {
+			if(images[i].getAttribute("src").match("_off."))
+			{
+				images[i].onmouseover = function() {
+					this.setAttribute("src", this.getAttribute("src").replace("_off.", "_on."));
+				}
+				images[i].onmouseout = function() {
+					this.setAttribute("src", this.getAttribute("src").replace("_on.", "_off."));
+				}
+			}
+		}
+	}
+}
+
+if(window.addEventListener) {
+	window.addEventListener("load", smartRollover, false);
+}
+else if(window.attachEvent) {
+	window.attachEvent("onload", smartRollover);
+}
+</script>
+
+
+</script>
+
+  </body>
+</html>

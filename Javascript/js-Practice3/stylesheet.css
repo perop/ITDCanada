@@ -1,0 +1,56 @@
+
+#rightbox{
+  background-color: #fffaf2;
+  width: 50px;
+  height: 400px;
+  float: right;
+  margin-top:10px;
+  margin-right: 10px;
+
+  /*
+  floatも使えるけれど、下の書き方にした方がおすすめ。
+  スクロールしても
+  position: fixed;
+  right: 0;
+
+また、listを使った場合のcssは
+
+#box{
+}
+
+  ui{
+      list-style-type:none;
+      margine: 0px;
+      padding: 0px;
+}
+
+  li.box{}
+
+  .red{}
+
+  という風にかける。　*/
+
+}
+
+
+.box{
+    width: 40px;
+    height: 40px;
+    float: right;
+    border-radius: 10px;
+    margin-top:20px;
+    margin-right:5px;
+  }
+
+.red{
+    background-color: red;
+
+}
+
+.blue{
+  background-color: blue;
+}
+
+.green{
+  background-color: green;
+}

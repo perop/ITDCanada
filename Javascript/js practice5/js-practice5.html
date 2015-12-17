@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculater</title>
+
+<style>
+  button{
+    width: 40px;
+    height: 20px;
+    margin: 5px 15px;
+}
+  p#result{
+    height: 30px;
+    width: 330px;
+    background-color: #eee;
+
+</style>
+</head>
+
+
+<body>
+  <input id="op1" type="number" />
+  <input id="op2" type="number" />
+  <p id="result"></p>
+
+
+  <button onclick="operation('+')">+</button>
+<button onclick=operation('-')">-</button>
+<button onclick="operation('*')">*</button>
+<button onclick="operation('/')">/</button>
+
+<script>
+
+
+function operation(operand)
+{
+  var res = document.getElementById('result');
+  var op1 = document.getElementById('op1').value;
+  var op2 = document.getElementById('op2').value;
+
+
+  if(operand=='+')
+  res.innerHTML =
+  Number(op1) + Number(op2);
+
+else if(operand=='-')
+res.innerHTML =
+Number(op1) - Number(op2);
+
+else if(operand=='*')
+res.innerHTML =
+Number(op1) * Number(op2);
+
+else (operand=='/')
+res.innerHTML =
+Number(op1) / Number(op2);
+
+}
+
+
+
+
+</script>
+</body>
+
+</html>

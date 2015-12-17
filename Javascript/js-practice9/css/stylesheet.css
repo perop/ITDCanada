@@ -1,0 +1,20 @@
+
+#box{
+  width: 700px;
+  heigh: 700px;
+  padding-top: 50px;
+  margin: 0 auto;
+  position: relative;
+ }
+
+#box button{
+  width: 80px;
+  height: 300px;
+  position: absolute;
+}
+
+#photobox{
+width: 400px;
+height: 300px;
+display: inline;
+}

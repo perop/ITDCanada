@@ -1,0 +1,164 @@
+
+body {
+  background-color: #ff8c8c;
+  font-family: arial ;
+}
+
+
+/*
+id ひとつだけしか持たないならidを使うべき
+class いくつも出てくる可能性があるなら、classを使う*/
+
+#main {
+  background-color: #fff;
+  width: 980px;
+  margin: 30px auto;
+}
+
+#header {
+  background-color: #446;
+  height: 200px;
+
+}
+
+#leftside {
+  width: 25%;
+  background-color: #ddd;
+  /*height: 500px;*/
+  float: left;
+}
+
+#vmenu ul{
+  list-style: none;
+  margin; 0;
+  padding: 0;
+  }
+
+/*i,p,ul,li全部のelementはデフォルトでマージンとパディングがあるので、
+その都度id内かclass内で0を設定しなければならない
+もしくは、CSSの一番上で最初に
+*{
+margin; 0;
+padding: 0;
+}
+と設定する
+*/
+
+
+#vmenu ul li{
+    border-bottom: 1px dotted #644;
+    padding: 15px 0 15px 25px;
+    font-size: 120%;
+    font-family: arial, verdana;
+  }
+
+  #vmenu ul li a {
+    text-decoration: none;
+    /*リンク下のラインを消す方法*/
+    padding: 15px 0 15px 25px;
+    color: inherit;
+      }
+
+  #vmenu ul li:hover {
+        color: #fff;
+        background-color: #644;
+          }
+
+    /*#vmenu ul li:hover {
+            color: #fff;
+            background-color: #644;
+      }*/
+
+#leftnote p{
+  padding: 20px;
+  text-align: justify;
+  /*justifyとは文字をパディング中で適当な幅にする*/
+}
+
+
+#section {
+  width: 70.8%;
+  background-color: #fff;
+  height: 500px;
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+#section h1{
+padding: 20px 0;
+font-family: arial, verdana;
+}
+
+#section p{
+  margine-bottom: 10px;
+
+}
+
+#header {
+  height: 200px;
+  background-color: #446;
+}
+
+#header h1 {
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+}
+
+#logo {
+  width: 25%;
+  float: left;
+}
+
+
+#logo img {
+display: block;
+margin: 0 auto;
+padding-top: 20px;
+width: 100px;
+height: 90px;
+
+}
+
+#hmenu {
+  height: 60px;
+  background-color:  #333;
+
+}
+
+#hmenu ul {
+margin: 0;
+padding: o;
+}
+
+
+#hmenu ul li {
+  color: #fff;
+  display: inline;
+}
+
+
+#hmenu ul li a {
+    color: #fff;
+    text-decoration: : none;
+    float: left;
+}
+#hmenu ul li a:hover {
+background-color:  #aaa;
+
+}
+
+
+
+
+
+#footer {
+  background-color: #644;
+  height: 100px;
+  clear: both;
+  color: #fff;
+  clear: both;
+  height: 100px;
+}

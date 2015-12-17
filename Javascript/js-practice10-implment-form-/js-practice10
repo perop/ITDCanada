@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="js-practice10.css">
+
+  <title></title>
+</head>
+
+<body>
+
+  <select id="Country" onchange="ChangeCountry()">
+    <option value="Ja">Japan</option>
+    <option value="Ir">Iran</option>
+    <option value="Sp">Spain</option>
+  </select>
+
+  <select id="Province" onchange="ChangeProvince()">
+    </select>
+
+  <select id="City" onchange="ChangeCity()">
+    </select>
+
+<script>
+
+function ChangeCountry{
+  var Province = document.ElementById(Country).value;
+
+ switch (Country) {
+    case Ja:
+      document.ElementById(Province).innerHTML = "<option>Tokyo</option><option>Osaka</option><option>Kanagawa</option>";
+      break;
+    case Ir:
+      document.ElementById(Province).innerHTML = "<option>Japan</option><option>Iran</option><option>Spain</option>";
+      break;
+    case Sp:
+    document.ElementById(Province).innerHTML = "<option>Japan</option><option>Iran</option><option>Spain</option>";
+      break;
+
+  }
+
+}
+
+</script>
+
+</body>
+
+</html>

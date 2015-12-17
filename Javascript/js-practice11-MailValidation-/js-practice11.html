@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Email Validation</title>
+
+<style>
+  div{
+      width: 400px;
+      height: 1000px;
+      margin: 0 auto;
+      margin-top: 100px;
+      position: relative;
+    }
+    p{
+  float: left;
+    }
+
+</style>
+</head>
+
+<body>
+  <div>
+  <h2>
+    Javascript Exersice No.11
+    <br>
+    Email Validation
+  </h2>
+    <br>
+      <p>
+    (1)should include @
+    <br>
+    (2)can include only a-z, A-Z, 0-9, ., underline(_)
+    <br>
+    (3)after @ should have two parts seperating by dot(.)
+    <br>
+    (4)last domain part can be only com, net, org, mil, gov
+    <br>
+      </p>
+
+    <p>Enter your Email address : <input type="text" name="email" id="email"/></p>
+    <br><br>
+    <p><input type="button" value="OK!" onclick="getEmail();"></p>
+
+
+</div>
+</body>
+
+<script>
+function getEmail() {
+  var email = document.getElementById('email').value;
+  var host;
+  var domain;
+  
+  var email = document.getElementById('email').value;
+}
+
+
+</script>
+
+</html>
