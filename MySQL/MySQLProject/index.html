@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+
+  <title>Programming Books Library</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <h1>Programming Books Library</h1>
+    <p>Find the book you want to learn!</p>
+  </div>
+
+
+  Con.Provider = "Microsoft.Jet.OLEDB.4.0"
+  Con.ConnectionString = "C:\Users\IT\Desktop\Webroot\ASPDBExample\ASPClass.mdb"
+  Con.Open
+  Dim adopenDynamic
+  Dim adLockOptimistic
+  adopenDynamic = 2
+  adLockOptimistic = 3
+  Rs.open "Select * from students", Con, adopenDynamic, adLockOptimistic
+  'Response.write " So far the connection stuff is all right"
+  Rs.MoveFirst
+  'Response.write "<Img src = './pics/budha.jpg'>"
+  Response.Write "<Table Border = '1'>"
+  Response.Write "<TH>"
+  Response.Write "ID"
+  Response.Write "</Th>"
+  Response.Write "<TH>"
+  Response.Write "First Name"
+  Response.Write "</Th>"
+  Response.Write "<TH>"
+  Response.Write "Sur Name "
+  Response.Write "</Th>"
+  Response.Write "<TH>"
+  Response.Write "Age"
+  Response.Write "</Th>"
+  Response.Write "<TH>"
+  Response.Write "Nationality"
+  Response.Write "</Th>"
+  Response.Write "<TH>"
+  Response.Write "Picture"
+  Response.Write "</Th>"
+
+  Do While Not RS.EOF
+  Response.Write "<Tr>"
+  	Response.Write "<Td>"
+  	Response.write RS.Fields("ID")
+  	Response.Write "</TD>"
+  	Response.Write "<Td>"
+  	Response.write RS.Fields("FirstName")
+  	Response.Write "</TD>"
+  	Response.Write "<Td>"
+  	Response.write RS.Fields("SurName")
+  	Response.Write "</TD>"
+  	Response.Write "<Td>"
+  	Response.write RS.Fields("Age")
+  	Response.Write "</TD>"
+  	Response.Write "<Td>"
+  	Response.write RS.Fields("Nationality")
+  	Response.Write "</TD>"
+  	Response.Write "<Td>"
+  	Response.write "<A href = '"+"./pics/" + RS.Fields("picturepath") + "'>" +  "<img src = './pics/" + RS.Fields("picturepath") + "' Height = 100 Width = 100></a>"
+  	Response.Write "</TD>"
+
+  	Rs.MoveNext
+  Response.Write "</Tr>"
+
+  Loop
+  response.Write "</Table>"
+
+
+
+</body>
+
+</html>

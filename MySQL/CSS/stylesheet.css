@@ -1,0 +1,20 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+
+h1 {
+  color:#4588bf;
+  text-align: center;
+}
+
+div{
+  text-align: center;
+
+}
+
+.header {
+    background: #CCFFCC;
+    height: 400px;
+}

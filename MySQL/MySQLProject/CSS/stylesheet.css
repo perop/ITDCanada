@@ -1,0 +1,31 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+
+
+.header {
+    background: #CCFFCC;
+    height: 300px;
+}
+
+h1 {
+  color:#4588bf;
+  font-size: 50px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+p {
+  color:#4588bf;
+  font-size: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+#bottuns{
+
+  
+}
